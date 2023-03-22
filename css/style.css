@@ -1,0 +1,559 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Import Popins - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/* TODO : to adapt to other browsers */
+
+/* ne fonctionne pas avec firefox border... */
+
+:root {
+  --clr-bkg: #000;
+  --clr-t1: #f7b42f;
+  --clr-t2: #fbe997;
+  --clr-t3: #ffcc00;
+  --clr-t4: #48ff00;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--clr-bkg);
+  font-family: 'Poppins', sans-serif;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1.563em;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* button 1 */
+.buttons .button1 {
+  padding: 15px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  letter-spacing: .063em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: center;
+  font-weight: 400;
+  color: var(--clr-t1);
+  border-width: 5px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  border-image: -webkit-gradient(linear,
+      left top, right top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) 1;
+  border-image: linear-gradient(to right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  background-color: var(--clr-bkg);
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.button1:hover,
+.button1:focus {
+  color: var(--clr-t2);
+  text-shadow: 0 0 .313em var(--clr-t3),
+    0 0 .125em var(--clr-t4);
+  border-width: 5px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  border-image: -webkit-gradient(linear,
+      left top, right top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) 1;
+  border-image: linear-gradient(to right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  -webkit-animation: color 1.5s linear infinite;
+  animation: color 1.5s linear infinite;
+}
+
+/* button 2 */
+.buttons .button2 {
+  padding: 15px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  letter-spacing: .063em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: -.313em;
+  font-weight: 400;
+  color: var(--clr-t1);
+  background-color: var(--clr-bkg);
+  border-radius: .625em;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+  border-width: 4px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  border-image: -webkit-gradient(linear,
+      right top, left top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) 1;
+  border-image: linear-gradient(to left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
+    -webkit-gradient(linear,
+      left top, right top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) border-box;
+  background: -o-linear-gradient(#000, #000) padding-box,
+    -o-linear-gradient(left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) border-box;
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) border-box;
+}
+
+.button2:hover,
+.button2:focus {
+  color: var(--clr-t2);
+  text-shadow: 0 0 .313em var(--clr-t3),
+    0 0 .125em var(--clr-t4);
+  -webkit-animation: color 1.5s linear infinite;
+  animation: color 1.5s linear infinite;
+  border-width: 4px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  border-image: -webkit-gradient(linear,
+      left top, right top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) 1;
+  border-image: linear-gradient(to right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  animation: color 1.5s linear infinite;
+}
+
+/* button 3 */
+.buttons .button3 {
+  padding: 15px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  letter-spacing: .063em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: -.313em;
+  font-weight: 400;
+  color: var(--clr-t1);
+  border-width: 4px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  border-image: -webkit-gradient(linear,
+      left top, right top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) 1;
+  border-image: linear-gradient(to right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
+    -webkit-gradient(linear,
+      left top, right top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) border-box;
+  background: -o-linear-gradient(#000, #000) padding-box,
+    -o-linear-gradient(left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) border-box;
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) border-box;
+  background-color: var(--clr-bkg);
+  border-radius: 3.125em;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.button3:hover,
+.button3:focus {
+  color: var(--clr-t2);
+  text-shadow: 0 0 .313em var(--clr-t3),
+    0 0 .125em var(--clr-t4);
+  border-width: 4px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left, #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  border-image: -webkit-gradient(linear, left top, right top, from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) 1;
+  border-image: linear-gradient(to right, #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
+    -webkit-gradient(linear, left top, right top, from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) border-box;
+  background: -o-linear-gradient(#000, #000) padding-box,
+    -o-linear-gradient(left, #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) border-box;
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) border-box;
+  -webkit-animation: color 1.5s linear infinite;
+  animation: color 1.5s linear infinite;
+}
+
+/* button 4 */
+.buttons .button4 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 30%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  letter-spacing: .063em;
+  text-align: center;
+  vertical-align: center;
+  font-weight: 300;
+  color: var(--clr-t1);
+  border-width: 4px;
+  border-style: solid;
+  -o-border-image: -o-linear-gradient(left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  border-image: -webkit-gradient(linear,
+      left top, right top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) 1;
+  border-image: linear-gradient(to right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) padding-box,
+    -webkit-gradient(linear,
+      left top, right top,
+      from(#ff0000),
+      color-stop(#ff7300),
+      color-stop(#fffb00),
+      color-stop(#48ff00),
+      color-stop(#00ffd5),
+      color-stop(#002bff),
+      color-stop(#7a00ff),
+      color-stop(#ff00c8),
+      to(#ff0000)) border-box;
+  background: -o-linear-gradient(#000, #000) padding-box,
+    -o-linear-gradient(left,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) border-box;
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000) border-box;
+  background-color: var(--clr-bkg);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.button4:hover,
+.button4:focus {
+  color: var(--clr-t2);
+  text-shadow: 0 0 .313em var(--clr-t3),
+    0 0 .125em var(--clr-t4);
+  -webkit-animation: color 1.5s linear infinite;
+  animation: color 1.5s linear infinite;
+}
+
+
+@-webkit-keyframes color {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+@keyframes color {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
